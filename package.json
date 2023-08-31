@@ -2,18 +2,6 @@
     "name": "nsv",
     "version": "0.0.1",
     "description": "",
-    "baseNode": {
-        "default": "14.21.3",
-        "darwin": {
-            "arm64": "16.20.0"
-        }
-    },
-    "mainNode": {
-        "default": "10.0.0"
-    },
-    "nsv": {
-        "version": "17"
-    },
     "scripts": {
         "serve": "node ./serve/index.js",
         "build": "esno ./script/build.dev.ts",
@@ -36,7 +24,7 @@
         "@types/cli-progress": "^3.11.0",
         "@types/fs-extra": "^11.0.1",
         "@types/inquirer": "^9.0.3",
-        "@types/lodash": "^4.14.192",
+        "@types/lodash-es": "^4.17.9",
         "@types/node": "^18.15.11",
         "@types/shelljs": "^0.8.11",
         "chokidar": "^3.5.3",
@@ -51,7 +39,8 @@
         "https-proxy-agent": "^7.0.1",
         "inquirer": "^9.2.10",
         "listr2": "^6.6.1",
-        "lodash": "^4.17.21",
+        "lodash-es": "^4.17.21",
+        "lowdb": "^6.0.1",
         "shelljs": "^0.8.5",
         "typescript": "^5.0.4"
     },

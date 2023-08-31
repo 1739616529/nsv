@@ -1,6 +1,6 @@
 import config from "../config.json";
 import { join } from "path";
-import { get, set } from "lodash";
+import { get, set } from "lodash-es";
 import * as process from "process";
 import { shellTempOneOffFile } from "../local.json"
 

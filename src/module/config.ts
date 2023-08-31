@@ -1,6 +1,6 @@
 
 import { existsSync, readJSONSync, writeJSONSync, writeJson } from "fs-extra"
-import { get, set } from "lodash";
+import { get, set } from "lodash-es";
 import { join } from "path";
 import { context } from "../context";
 

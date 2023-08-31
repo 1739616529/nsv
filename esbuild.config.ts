@@ -14,7 +14,8 @@ export default <BuildOptionFn>function ({ mode }) {
         entryPoints: [ join(__dirname, "./src/index.ts") ],
 
         // 输出文件
-        outfile: join(__dirname, "./dist/index.js"),
+        // outfile: join(__dirname, "./dist/index.js"),
+        outdir: join(__dirname, "dist"),
 
         // 别名
         alias: {
@@ -29,8 +30,10 @@ export default <BuildOptionFn>function ({ mode }) {
         // 编译目标
         format: "cjs",
 
+        // splitting: true,
+
         // bnode版本兼容 最低版本
-        target: ['node8'],
+        target: ['node14'],
 
         // 代码压缩
         minify: mode === "build",
