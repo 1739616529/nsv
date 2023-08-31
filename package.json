@@ -16,11 +16,9 @@
     },
     "scripts": {
         "serve": "node ./serve/index.js",
-        "type": "tsc --declaration --outFile types.d.ts",
-        "build": "swc src -d dist",
-        "dev": "swc src -d dist --watch",
+        "build": "esno ./script/build.dev.ts",
+        "dev": "esno ./script/watch.dev.ts",
         "init": "node ./dist/init.js",
-        "postinstall": "node ./script/postinstall.prod.js",
         "prepack": "npm run build"
     },
     "keywords": [
@@ -42,20 +40,20 @@
         "@types/node": "^18.15.11",
         "@types/shelljs": "^0.8.11",
         "chokidar": "^3.5.3",
-        "express": "^4.18.2",
-        "typescript": "^5.0.4"
-    },
-    "dependencies": {
         "cli-progress": "^3.12.0",
-        "commander": "^10.0.0",
-        "compare-versions": "6.0.0-rc.1",
-        "enquirer": "^2.3.6",
+        "commander": "^11.0.0",
+        "compare-versions": "^6.1.0",
+        "enquirer": "^2.4.1",
+        "esbuild": "^0.19.2",
+        "esno": "^0.17.0",
+        "express": "^4.18.2",
         "fs-extra": "^11.1.1",
-        "https-proxy-agent": "^6.1.0",
-        "inquirer": "^9.1.5",
-        "listr2": "^6.4.2",
+        "https-proxy-agent": "^7.0.1",
+        "inquirer": "^9.2.10",
+        "listr2": "^6.6.1",
         "lodash": "^4.17.21",
-        "shelljs": "^0.8.5"
+        "shelljs": "^0.8.5",
+        "typescript": "^5.0.4"
     },
     "engines": {
         "node": ">=10.0.0"
