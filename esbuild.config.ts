@@ -11,7 +11,10 @@ export default <BuildOptionFn>function ({ mode }) {
         bundle: true,
 
         // 入口文件
-        entryPoints: [ join(__dirname, "./src/index.ts") ],
+        entryPoints: [
+            join(__dirname, "./src/index.ts"),
+            join(__dirname, "./src/init.ts")
+        ],
 
         // 输出文件
         // outfile: join(__dirname, "./dist/index.js"),
